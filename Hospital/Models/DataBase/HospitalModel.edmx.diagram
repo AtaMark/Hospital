@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d5f052d7311b453ea343cec3c26f84d8" Name="Diagram1">
+        <EntityTypeShape EntityType="HOSPITALModel.Address" Width="1.5" PointX="3" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Appointment" Width="1.5" PointX="6" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Bed" Width="1.5" PointX="3.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Department" Width="1.5" PointX="1.5" PointY="28.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Diagnosi" Width="1.5" PointX="3.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Doctor" Width="1.5" PointX="1.5" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Follow_up" Width="1.5" PointX="8.25" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.History" Width="1.5" PointX="3" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Lab_header" Width="1.5" PointX="8.25" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Lab_test_lines" Width="1.5" PointX="8.25" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Lab_test_results" Width="1.5" PointX="10.5" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Operation" Width="1.5" PointX="3.75" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Patient" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Pharmacy" Width="1.5" PointX="3.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Prescription" Width="1.5" PointX="6" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Radio_Image" Width="1.5" PointX="11.25" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Sales_header" Width="1.5" PointX="8.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Sales_line" Width="1.5" PointX="11" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Triage" Width="1.5" PointX="8.25" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.UOM" Width="1.5" PointX="6" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.User" Width="1.5" PointX="3.75" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Visit" Width="1.5" PointX="6.25" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Ward" Width="1.5" PointX="1.5" PointY="9.25" IsExpanded="true" />
+        <AssociationConnector Association="HOSPITALModel.fk_Address_Patient1" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk_Appointment_Visit1" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk2_PatientID" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk_id_department" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk_Visit_Bed1" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.id_ward" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.departmentID" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk_departmentID" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.id_department" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk_Diagnosis_Doctor1" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk_Follow_up_Visit1" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk_Family_history_Patient1" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk_visitID" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk2_userID" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.Lab_headerID" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.Lab_test_linesID" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.Lab_test_reagentID" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk_patientID" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.patientID" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.userID" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk_userID" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.visitID" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk2_visitID" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk3_userID" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk_Sales_line_Sales_header1" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.fk_Triage_Visit1" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.Diagnosis_has_Visit" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.Doctor_has_Prescription" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.Operation_has_Doctor" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.Prescription_has_Pharmacy" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.UOM_has_Pharmacy" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.Visit_has_Doctor" ManuallyRouted="false" />
+        <AssociationConnector Association="HOSPITALModel.Visit_has_Operation" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
