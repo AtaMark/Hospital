@@ -1,0 +1,56 @@
+﻿@model Hospital.Models.DataBase.Lab_header
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Lab_header</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.lab_test_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lab_test_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lab_test_time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lab_test_time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Visit.patientID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Visit.patientID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

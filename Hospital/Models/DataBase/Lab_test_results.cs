@@ -11,10 +11,13 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Lab_test_results
     {
+        
         public int idLab_test { get; set; }
+        [Display(Name = "Observation")]
         public string Lab_test_description { get; set; }
         public Nullable<int> Lab_headerID { get; set; }
         public Nullable<int> Lab_test_linesID { get; set; }

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Hospital.Models.DataBase.Lab_header>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.lab_test_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lab_test_time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Visit.patientID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.lab_test_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lab_test_time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Visit.patientID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idLab_header }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idLab_header }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idLab_header })
+        </td>
+    </tr>
+}
+
+</table>

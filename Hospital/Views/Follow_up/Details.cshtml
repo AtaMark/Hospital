@@ -1,0 +1,50 @@
+﻿@model Hospital.Models.DataBase.Follow_up
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Follow_up</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.follow_up_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.follow_up_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Follow_up_time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Follow_up_time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Visit.patientID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Visit.patientID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

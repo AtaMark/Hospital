@@ -1,0 +1,50 @@
+﻿@model Hospital.Models.DataBase.Lab_header
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Lab_header</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.lab_test_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lab_test_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lab_test_time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lab_test_time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Visit.patientID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Visit.patientID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idLab_header }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

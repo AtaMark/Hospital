@@ -1,0 +1,50 @@
+﻿@model Hospital.Models.DataBase.Radio_Image
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Radio_Image</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.imageObservation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.imageObservation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.image_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.image_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Visit.patientID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Visit.patientID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idRadio_Image }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

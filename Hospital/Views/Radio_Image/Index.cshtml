@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Hospital.Models.DataBase.Radio_Image>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.imageObservation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.image_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Visit.patientID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.imageObservation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.image_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Visit.patientID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idRadio_Image }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idRadio_Image }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idRadio_Image })
+        </td>
+    </tr>
+}
+
+</table>

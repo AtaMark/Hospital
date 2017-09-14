@@ -11,13 +11,18 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Radio_Image
     {
         public int idRadio_Image { get; set; }
+        [Display(Name = "VisitID")]
         public Nullable<int> visitID { get; set; }
+        [Display(Name = "Observation")]
         public string imageObservation { get; set; }
+        [Display(Name = "UserID")]
         public string userID { get; set; }
+        [Display(Name = "Time")]
         public Nullable<System.DateTime> image_date { get; set; }
     
         public virtual Visit Visit { get; set; }

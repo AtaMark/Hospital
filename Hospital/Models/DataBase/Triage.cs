@@ -11,15 +11,23 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Triage
     {
+        [Display(Name = "Triage Visit No.")]
         public int idTriage { get; set; }
+        [Display(Name = "Height")]
         public Nullable<decimal> height { get; set; }
+        [Display(Name = "Mass")]
         public Nullable<decimal> mass { get; set; }
+        [Display(Name = "Blood Pressure")]
         public Nullable<decimal> blood_pressure { get; set; }
+        
         public string Triagecol { get; set; }
+        [Display(Name = "Visit No.")]
         public int Visit_idVisit { get; set; }
+        [Display(Name = "Unit Cost")]
         public Nullable<decimal> checkup_cost { get; set; }
     
         public virtual Visit Visit { get; set; }

@@ -1,0 +1,58 @@
+﻿@model Hospital.Models.DataBase.Doctor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Doctor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.doctor_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doctor_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.specialisation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.specialisation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doctor_contact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doctor_contact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doctor_email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doctor_email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Department.department_description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Department.department_description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idDoctor }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,34 @@
+﻿@model Hospital.Models.DataBase.UOM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>UOM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UOM_description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UOM_description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.quantity_per_UOM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quantity_per_UOM)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idUOM }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

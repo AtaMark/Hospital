@@ -11,15 +11,23 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Sales_line
     {
+
         public int idSales_line { get; set; }
+        [Display(Name = "Type")]
         public Nullable<int> type { get; set; }
+        [Display(Name = "No.")]
         public string no { get; set; }
+        [Display(Name = "Description")]
         public string description { get; set; }
+        [Display(Name = "Quantity")]
         public Nullable<decimal> quantity { get; set; }
+        [Display(Name = "Amount")]
         public Nullable<decimal> amount { get; set; }
+        [Display(Name = "Document No.")]
         public int Sales_header_idSales_header { get; set; }
     
         public virtual Sales_header Sales_header { get; set; }

@@ -11,7 +11,8 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Sales_header
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,10 +20,13 @@ namespace Hospital.Models.DataBase
         {
             this.Sales_line = new HashSet<Sales_line>();
         }
-    
+        [Display(Name = "No.")]
         public int idSales_header { get; set; }
+        [Display(Name = "PatientID")]
         public string customerID { get; set; }
+        [Display(Name = "Name")]
         public string customer_name { get; set; }
+        [Display(Name = "Date")]
         public Nullable<System.DateTime> posting_date { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

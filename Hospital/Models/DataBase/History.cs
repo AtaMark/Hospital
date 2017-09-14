@@ -11,11 +11,15 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class History
     {
+        [Display(Name = "Patient History")]
         public int idFamily_history { get; set; }
+        [Display(Name = "Patient ID")]
         public string Patient_idPatient { get; set; }
+        [Display(Name = "Type")]
         public Nullable<int> hist_type { get; set; }
     
         public virtual Patient Patient { get; set; }

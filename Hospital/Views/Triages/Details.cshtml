@@ -1,0 +1,66 @@
+﻿@model Hospital.Models.DataBase.Triage
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Triage</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.height)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.height)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.blood_pressure)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.blood_pressure)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Triagecol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Triagecol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.checkup_cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.checkup_cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Visit.patientID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Visit.patientID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

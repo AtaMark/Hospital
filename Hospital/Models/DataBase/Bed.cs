@@ -11,7 +11,8 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Bed
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,10 +20,13 @@ namespace Hospital.Models.DataBase
         {
             this.Visits = new HashSet<Visit>();
         }
-    
+        [Display (Name = "Bed No.")]
         public int idBed { get; set; }
+        [Display (Name = "DepartmentID")]
         public Nullable<int> id_department { get; set; }
+        [Display (Name = "Ward No.")]
         public Nullable<int> id_ward { get; set; }
+        [Display (Name = "Bed Status")]
         public Nullable<int> bed_status { get; set; }
     
         public virtual Department Department { get; set; }
