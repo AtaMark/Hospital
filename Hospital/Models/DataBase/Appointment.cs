@@ -11,19 +11,15 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Appointment
     {
-        [Display (Name = "Appointment No.")]
         public int idAppointment { get; set; }
         public string patientID { get; set; }
         public Nullable<int> status { get; set; }
         public Nullable<System.DateTime> date { get; set; }
         public Nullable<System.TimeSpan> time { get; set; }
-        [Display(Name = "Reason for Missing")]
         public string reason_for_missing_appointment { get; set; }
-        [Display (Name = "Visit No.")]
         public int Visit_idVisit { get; set; }
     
         public virtual Visit Visit { get; set; }

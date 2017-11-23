@@ -11,8 +11,7 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class User
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -23,15 +22,11 @@ namespace Hospital.Models.DataBase
             this.Prescriptions = new HashSet<Prescription>();
             this.Radio_Image = new HashSet<Radio_Image>();
         }
-        [Display(Name = "UserID")]
+    
         public string idUser { get; set; }
-        [Display(Name = "Name")]
         public string name { get; set; }
-        [Display(Name = "DepartmentID")]
         public Nullable<int> departmentID { get; set; }
-        [Display(Name = "Email")]
         public string email { get; set; }
-        [Display(Name = "Contact")]
         public string user_contact { get; set; }
     
         public virtual Department Department { get; set; }

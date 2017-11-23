@@ -18,7 +18,7 @@
         <EntityTypeShape EntityType="HOSPITALModel.Lab_test_results" Width="1.5" PointX="10.5" PointY="21.5" IsExpanded="true" />
         <EntityTypeShape EntityType="HOSPITALModel.Operation" Width="1.5" PointX="3.75" PointY="25" IsExpanded="true" />
         <EntityTypeShape EntityType="HOSPITALModel.Patient" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="HOSPITALModel.Pharmacy" Width="1.5" PointX="3.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HOSPITALModel.Pharmacy" Width="1.5" PointX="2.5" PointY="2.25" IsExpanded="true" />
         <EntityTypeShape EntityType="HOSPITALModel.Prescription" Width="1.5" PointX="6" PointY="8.875" IsExpanded="true" />
         <EntityTypeShape EntityType="HOSPITALModel.Radio_Image" Width="1.5" PointX="11.25" PointY="18.375" IsExpanded="true" />
         <EntityTypeShape EntityType="HOSPITALModel.Sales_header" Width="1.5" PointX="8.75" PointY="1.25" IsExpanded="true" />

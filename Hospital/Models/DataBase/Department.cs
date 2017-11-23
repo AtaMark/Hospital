@@ -11,8 +11,7 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Department
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -23,9 +22,8 @@ namespace Hospital.Models.DataBase
             this.Users = new HashSet<User>();
             this.Wards = new HashSet<Ward>();
         }
-        [Display (Name = "DepartmentID")]
+    
         public int idDepartment { get; set; }
-        [Display (Name = "Department Name")]
         public string department_description { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

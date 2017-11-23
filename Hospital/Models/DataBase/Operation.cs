@@ -11,8 +11,7 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Operation
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -21,11 +20,9 @@ namespace Hospital.Models.DataBase
             this.Doctors = new HashSet<Doctor>();
             this.Visits = new HashSet<Visit>();
         }
-        [Display(Name = "Procedure No.")]
+    
         public int idprocedure { get; set; }
-        [Display(Name = "Description")]
         public string procedure_description { get; set; }
-        [Display(Name = "Cost")]
         public Nullable<decimal> procedure_cost { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

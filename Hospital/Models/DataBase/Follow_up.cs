@@ -11,19 +11,13 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Follow_up
     {
-        [Display (Name = "FollowUpID")]
         public int idFollow_up { get; set; }
-        [Display(Name = "Description")]
         public string description { get; set; }
-        [Display(Name = "Date")]
         public Nullable<System.DateTime> follow_up_date { get; set; }
-        [Display(Name = "Time")]
         public Nullable<System.TimeSpan> Follow_up_time { get; set; }
-        [Display(Name = "Visit No.")]
         public int Visit_idVisit { get; set; }
     
         public virtual Visit Visit { get; set; }

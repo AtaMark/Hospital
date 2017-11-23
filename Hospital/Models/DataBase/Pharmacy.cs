@@ -11,8 +11,7 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Pharmacy
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -22,15 +21,11 @@ namespace Hospital.Models.DataBase
             this.Prescriptions = new HashSet<Prescription>();
             this.UOMs = new HashSet<UOM>();
         }
-        [Display (Name = "DrugID")]
+    
         public int idDrug { get; set; }
-        [Display(Name = "Description")]
         public string drug_description { get; set; }
-        [Display(Name = "Quantity")]
         public Nullable<decimal> quantity { get; set; }
-        [Display(Name = "User")]
         public string userID { get; set; }
-        [Display(Name = "Unit Cost")]
         public Nullable<decimal> drug_cost { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

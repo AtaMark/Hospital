@@ -10,7 +10,7 @@ namespace Hospital.Models.EntityManager
     //This class will handle CRUD operations for User Entity
     public class UserManager
     {
-        public void AddUser(UserModel user) {
+      /* public void AddUser(UserModel user) {
             using (HOSPITALEntities db = new HOSPITALEntities())
             {
                 User newUser = new User();
@@ -21,6 +21,6 @@ namespace Hospital.Models.EntityManager
                 db.Users.Add(newUser);
             }
 
+        }*/
         }
     }
-}

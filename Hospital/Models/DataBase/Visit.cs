@@ -11,8 +11,7 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Visit
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -28,21 +27,14 @@ namespace Hospital.Models.DataBase
             this.Doctors = new HashSet<Doctor>();
             this.Operations = new HashSet<Operation>();
         }
-        [Display(Name = "Visit No.")]
+    
         public int idVisit { get; set; }
-        [Display(Name = "PatientID")]
         public string patientID { get; set; }
-        [Display(Name = "Date")]
         public Nullable<System.DateTime> visit_date { get; set; }
-        [Display(Name = "DoctorID")]
         public string doctorID { get; set; }
-        [Display(Name = "Procedure")]
         public Nullable<int> procedureID { get; set; }
-        [Display(Name = "Type")]
         public Nullable<int> visit_type { get; set; }
-        [Display(Name = "Time")]
         public Nullable<System.TimeSpan> time { get; set; }
-        [Display(Name = "Bed No.")]
         public int Bed_idBed { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

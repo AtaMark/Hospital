@@ -11,8 +11,7 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Lab_header
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -20,16 +19,11 @@ namespace Hospital.Models.DataBase
         {
             this.Lab_test_results = new HashSet<Lab_test_results>();
         }
-
-        
+    
         public int idLab_header { get; set; }
-        [Display(Name = "UserID")]
         public string userID { get; set; }
-        [Display(Name = "VisitID")]
         public Nullable<int> visitID { get; set; }
-        [Display(Name = "Date")]
         public Nullable<System.DateTime> lab_test_date { get; set; }
-        [Display(Name = "Time")]
         public Nullable<System.TimeSpan> lab_test_time { get; set; }
     
         public virtual Visit Visit { get; set; }
