@@ -12,6 +12,11 @@ namespace Hospital.Models
     */
     public class PatientMetadata
     {
+        [StringLength(20)]
+        [Display(Name = "PatientID")]
+        [Required]
+        public string idPatient;
+
         [StringLength(50)]
         [Display(Name = "Name")]
         [Required]
@@ -57,8 +62,101 @@ namespace Hospital.Models
 
         [Required]
         [EmailAddress]
+        [StringLength(45)]
         [Display(Name = "Email")]
         public string Email;
 
     }
+    public class AddressMetadata {
+        [StringLength (13)]
+        [Required]
+        [Display (Name = "Phone Contact") ]
+        public string contact;
+
+        [StringLength(45)]
+        [Required]
+        [Display(Name = "Address1")]
+        public string Address1;
+
+        [StringLength(45)]
+        [Display(Name = "Address2")]
+        public string Address2;
+        public string patientID;
+    }
+    public class AppointmentMetadata {
+        public int idAppointment;
+        public string patientID;
+        [Display(Name = "Status")]
+        public Nullable<int> status;
+
+        [Required]
+        [Display (Name = "Appointment Date")]
+        public Nullable<System.DateTime> date;
+
+        [Required]
+        [Display (Name = "Appointment Time")]
+        public Nullable<System.TimeSpan> time;
+
+        [StringLength(45)]
+        public string reason_for_missing_appointment;
+        public int Visit_idVisit;
+    }    
+    public class DepartmentMetadata
+    {
+    }
+    public class DiagnosisMetadata
+    {
+    }
+    public class DoctorMetadata
+    {
+    }
+    public class Follow_upMetadata
+    {
+    }
+    public class HistoryMetadata
+    {
+    }
+    public class Lab_headerMetadata
+    {
+    }
+    public class Lab_test_linesMetadata
+    {
+    }
+    public class Lab_test_resultsMetadata
+    {
+    }
+    public class OperationMetadata
+    {
+    }
+    public class PharmacyMetadata
+    {
+    }
+    public class PrescriptionMetadata
+    {
+    }
+    public class Radio_imageMetadata
+    {
+    }
+    public class Sales_headerMetadata
+    {
+    }
+    public class Sales_lineMetadata
+    {
+    }
+    public class TriageMetadata
+    {
+    }
+    public class UOM_Metadata
+    {
+    }
+    public class UserMetadata
+    {
+    }
+    public class VisitMetadata
+    {
+    }
+    public class Ward_Metadata
+    {
+    }
+
 }

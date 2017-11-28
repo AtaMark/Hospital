@@ -11,7 +11,8 @@ namespace Hospital.Models.DataBase
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+    [MetadataType(typeof(PatientMetadata))]
     public partial class Patient
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -33,7 +34,7 @@ namespace Hospital.Models.DataBase
         public Nullable<System.DateTime> DOB { get; set; }
         public string Name_NOK { get; set; }
         public string Contact_NOK { get; set; }
-        public string NOK_Relationship { get; set; }
+        public string NOK_Relationship { get; set; }        
         public string Email { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
